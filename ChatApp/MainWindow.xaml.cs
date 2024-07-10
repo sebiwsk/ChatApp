@@ -11,14 +11,37 @@ using System.Windows.Shapes;
 
 namespace ChatApp
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow:Window
     {
-        public MainWindow()
-        {
-            InitializeComponent();
+        class MainViewModel
+        {          
         }
+        private void Border_MouseDown(object sender, MouseEventArgs e)
+        {
+            if(e.LeftButton == MouseButtonState.Pressed)
+            {
+                DragMove();
+            }
+        }
+        private void MinimizeButton_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.MainWindow.WindowState = WindowState.Minimized;
+        }
+        private void WindowsStateButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (Application.Current.MainWindow.WindowState != WindowState.Maximized) 
+            {
+                Application.Current.MainWindow.WindowState = WindowState.Maximized;
+            }
+            else
+            {
+                Application.Current.MainWindow.WindowState = WindowState.Normal;
+            }
+        }
+        private void closeButton_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
+
     }
 }
