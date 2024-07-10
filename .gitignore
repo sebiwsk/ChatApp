@@ -1,0 +1,10 @@
+# Exclude build output directories
+/bin/
+/obj/
+
+# Exclude Visual Studio temporary files, build results, and
+# user preferences
+.vs/
+
+# Exclude all files in the Debug folder
+Debug/
