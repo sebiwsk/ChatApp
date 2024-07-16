@@ -9,9 +9,35 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Core\" />
-    <Folder Include="Icons\" />
+    <None Remove="Icons\cam.svg" />
+    <None Remove="Icons\camera.svg" />
+    <None Remove="Icons\phone.svg" />
+    <None Remove="Icons\Plus.svg" />
+    <None Remove="Icons\send.svg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Icons\cam.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Icons\phone.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Icons\plus.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Icons\send.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="MVVM\View\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SharpVectors" Version="1.8.4" />
+    <PackageReference Include="SharpVectors.Wpf" Version="1.8.4" />
   </ItemGroup>
 
 </Project>

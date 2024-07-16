@@ -43,5 +43,9 @@ namespace ChatApp
             Application.Current.Shutdown();
         }
 
+        private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

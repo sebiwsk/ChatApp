@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "eVl6eHcMzUk=",
+  "dgSpecHash": "VRQb4EpQs/Y=",
   "success": true,
   "projectFilePath": "C:\\Users\\sweiske\\source\\repos\\ChatApp\\ChatApp\\ChatApp.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\sweiske\\.nuget\\packages\\sharpvectors\\1.8.4\\sharpvectors.1.8.4.nupkg.sha512",
+    "C:\\Users\\sweiske\\.nuget\\packages\\sharpvectors.wpf\\1.8.4\\sharpvectors.wpf.1.8.4.nupkg.sha512"
+  ],
   "logs": []
 }
