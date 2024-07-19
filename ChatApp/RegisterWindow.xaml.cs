@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace ChatApp
 {
     /// <summary>
-    /// Interaktionslogik für LoginWindow.xaml
+    /// Interaktionslogik für RegisterWindow.xaml
     /// </summary>
-    public partial class LoginWindow : Window
+    public partial class RegisterWindow : Window
     {
-        public LoginWindow()
+        public RegisterWindow()
         {
             InitializeComponent();
         }
@@ -54,12 +54,12 @@ namespace ChatApp
             double left = this.Left;
             double top = this.Top;
 
-            RegisterWindow registerWindow = new RegisterWindow();
+            LoginWindow loginWindow = new LoginWindow();
 
-            registerWindow.Left = left;
-            registerWindow.Top = top;
+            loginWindow.Left = left;
+            loginWindow.Top = top;
 
-            registerWindow.Show();
+            loginWindow.Show();
             this.Close();
         }
     }
