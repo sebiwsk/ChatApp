@@ -24,6 +24,12 @@
     <Page Update="Themes\ContactCard.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Themes\PasswordBox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\LoginBox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Themes\MessageBox.xaml">
       <SubType>Designer</SubType>
     </Page>
