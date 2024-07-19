@@ -62,5 +62,29 @@ namespace ChatApp
             loginWindow.Show();
             this.Close();
         }
+        private void SignUpButton(object sender, RoutedEvent e)
+        {
+            string username = UsernameTextBox.Text;
+            string password = PasswordBox.Password;
+            string repeatpassword = RepeatPasswordBx.Password;
+
+            //if (password == repeatpassword)
+            //{
+            //    double left = this.Left;
+            //    double top = this.Top;
+
+            //    MainWindow mainWindow = new MainWindow();
+
+            //    mainWindow.Left = left;
+            //    mainWindow.Top = top;
+
+            //    mainWindow.Show();
+            //    this.Close();
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Das Passwort ist nicht identisch.");
+            //}
+        }
     }
 }

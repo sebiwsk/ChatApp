@@ -40,9 +40,33 @@
             <Grid HorizontalAlignment="Stretch">
                 <Label Content="Login" Foreground="Gray" FontWeight="SemiBold"/>
                 <StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
-                    <Button Width="20" Height="20" Content="-" Background="Transparent" BorderThickness="0" Foreground="Gray" FontWeight="Bold" Click="MinimizeButton_Click"/>
-                    <Button Width="20" Height="20" Content="◻" Background="Transparent" BorderThickness="0" Foreground="Gray" FontWeight="Bold" Click="WindowsStateButton_Click"/>
-                    <Button Width="20" Height="20" Content="X" Background="Transparent" BorderThickness="0" Foreground="Gray" FontWeight="Medium" Click="closeButton_Click"/>
+                    <Button 
+                        Width="20" 
+                        Height="20" 
+                        Content="-" 
+                        Background="Transparent" 
+                        BorderThickness="0" 
+                        Foreground="Gray" 
+                        FontWeight="Bold" 
+                        Click="MinimizeButton_Click"/>
+                    <Button 
+                        Width="20"
+                        Height="20" 
+                        Content="◻" 
+                        Background="Transparent" 
+                        BorderThickness="0" 
+                        Foreground="Gray" 
+                        FontWeight="Bold" 
+                        Click="WindowsStateButton_Click"/>
+                    <Button 
+                        Width="20" 
+                        Height="20" 
+                        Content="X" 
+                        Background="Transparent" 
+                        BorderThickness="0" 
+                        Foreground="Gray" 
+                        FontWeight="Medium" 
+                        Click="closeButton_Click"/>
                 </StackPanel>
             </Grid>
         </Border>
@@ -85,13 +109,13 @@
             Margin="0,5,0,0"
             Style="{StaticResource PasswordBox}"/>
         <Button Grid.Row="7" 
-                Grid.Column="1" 
-                Content="Einloggen" 
-                Width="150" 
-                Height="30"
-                HorizontalAlignment="Center" 
-                Margin="0,30,0,0"
-                Background="#8576FF"/>
+           Grid.Column="1" 
+            Content="Einloggen" 
+            Width="150" 
+            Height="30"
+            HorizontalAlignment="Center" 
+            Margin="0,30,0,0"
+            Background="#8576FF"/>
         <TextBlock 
             Grid.Row="8" 
             Grid.Column="1" 

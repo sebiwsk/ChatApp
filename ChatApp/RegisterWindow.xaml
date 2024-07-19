@@ -41,9 +41,33 @@
             <Grid HorizontalAlignment="Stretch">
                 <Label Content="Sign up" Foreground="Gray" FontWeight="SemiBold"/>
                 <StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
-                    <Button Width="20" Height="20" Content="-" Background="Transparent" BorderThickness="0" Foreground="Gray" FontWeight="Bold" Click="MinimizeButton_Click"/>
-                    <Button Width="20" Height="20" Content="◻" Background="Transparent" BorderThickness="0" Foreground="Gray" FontWeight="Bold" Click="WindowsStateButton_Click"/>
-                    <Button Width="20" Height="20" Content="X" Background="Transparent" BorderThickness="0" Foreground="Gray" FontWeight="Medium" Click="closeButton_Click"/>
+                    <Button 
+                        Width="20" 
+                        Height="20" 
+                        Content="-" 
+                        Background="Transparent" 
+                        BorderThickness="0" 
+                        Foreground="Gray" 
+                        FontWeight="Bold" 
+                        Click="MinimizeButton_Click"/>  
+                    <Button 
+                        Width="20"
+                        Height="20" 
+                        Content="◻" 
+                        Background="Transparent" 
+                        BorderThickness="0" 
+                        Foreground="Gray" 
+                        FontWeight="Bold" 
+                        Click="WindowsStateButton_Click"/>
+                    <Button 
+                        Width="20" 
+                        Height="20" 
+                        Content="X" 
+                        Background="Transparent" 
+                        BorderThickness="0" 
+                        Foreground="Gray" 
+                        FontWeight="Medium" 
+                        Click="closeButton_Click"/>
                 </StackPanel>
             </Grid>
         </Border>
@@ -69,7 +93,8 @@
             Height="30"
             HorizontalAlignment="Center" 
             Margin="0,5,0,0"
-            Style="{StaticResource LoginBox}"/>
+            Style="{StaticResource LoginBox}"
+            Name="UsernameTextBox"/>
         <TextBlock 
             Grid.Row="5" 
             Grid.Column="1" 
@@ -84,7 +109,8 @@
             Height="30"
             HorizontalAlignment="Center" 
             Margin="0,5,0,0"
-            Style="{StaticResource PasswordBox}"/>
+            Style="{StaticResource PasswordBox}"
+            Name="PasswordBox"/>
         <TextBlock 
              Grid.Row="7" 
              Grid.Column="1" 
@@ -99,7 +125,8 @@
             Height="30"
             HorizontalAlignment="Center" 
             Margin="0,5,0,0"
-            Style="{StaticResource PasswordBox}"/>  
+            Style="{StaticResource PasswordBox}"
+            Name="RepeatPasswordBx"/>  
         <Button Grid.Row="9" 
             Grid.Column="1" 
             Content="Sign Up" 
@@ -107,7 +134,9 @@
             Height="30"
             HorizontalAlignment="Center" 
             Margin="0,30,0,0"
-            Background="#8576FF"/>
+            Background="#8576FF"
+            Click="SignUpButton"
+            Name="SignUpButton"/>
         <TextBlock 
             Grid.Row="10" 
             Grid.Column="1" 
@@ -115,6 +144,7 @@
             Foreground="white" 
             HorizontalAlignment="Center" 
             Margin="0,10,0,0"
-            MouseLeftButtonDown="OpenWindowTextBlock_MouseLeftButtonDown" />
+            MouseLeftButtonDown="OpenWindowTextBlock_MouseLeftButtonDown" 
+            Name="LoginTextBlock"/>
     </Grid>
 </Window>
